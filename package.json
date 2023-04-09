@@ -1,0 +1,29 @@
+{
+  "name": "telegraf-i18nextt",
+  "version": "1.0.3",
+  "description": "i18next Localization for telegraf.js.",
+  "license": "MIT",
+  "author": "Maksim Leviy",
+  "homepage": "https://github.com/maksim-leviy/telegraf-i18next",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/maksim-leviy/telegraf-i18next"
+  },
+  "bugs": {
+    "url": "https://github.com/maksim-leviy/telegraf-i18next/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "i18next": "^22.4.14"
+  },
+  "keywords": [
+    "telegraf",
+    "telegraf-i18n",
+    "telegraf-i18next",
+    "telegraf i18n",
+    "telegraf i18next"
+  ]
+}
