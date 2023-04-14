@@ -1,13 +1,13 @@
-const { init, cloneInstance, on } = require('i18next')
+const _i18next = require('i18next')
 
 function i18next(options) {
-    init(options)
+    _i18next.init(options)
 
     async function i18nextMiddleware(ctx, next) {
         const userLocale = ctx.session?.locale ?? ctx.from.language_code
-        const i18next = cloneInstance({ initImmediate: false, lng: userLocale })
+        const i18next = _i18next.cloneInstance({ initImmediate: false, lng: userLocale })
 
-        on('languageChanged', (lng) => {
+        _i18next.on('languageChanged', (lng) => {
             ctx.session.locale = lng
         })
 

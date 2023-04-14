@@ -1,33 +1,43 @@
 <header>
 
 <div align="center">
+
 <h1 align="center">telegraf-i18next</h1>
+<p>i18next Localization for telegraf.js.</p>
+<a href="https://www.npmjs.com/package/i18next">
+	<img src="https://img.shields.io/badge/i18next%20-v22.4.14-f36caf.svg?style=flat-square" alt="i18next version" />
+</a>
+<a href="https://packagephobia.com/result?p=telegraf-i18next">
+	<img src="https://flat.badgen.net/packagephobia/install/telegraf" alt="install size" />
+</a>
+
 </div>
 
 </header>
 
-### Features
+## Features
 
 - Helps with localization for your bot.
 - This module uses [i18next](https://www.npmjs.com/package/i18next).
 
-### Resources
+## Resources
 - [Getting started](#getting-started)
 - Methods:
     * [i18next](#i18next)
     * [match](#match)
     * [reply](#reply)
+- [i18next Documentation](https://www.i18next.com/)
 
 ## Getting started
 
 ### Installation
 
 ```shellscript
-$ npm install telegraf telegraf-i18next
+$ npm install telegraf-i18next
 ```
 or
 ```shellscript
-$ yarn add telegraf telegraf-i18next
+$ yarn add telegraf-i18next
 ```
 or
 ```shellscript
@@ -87,6 +97,8 @@ process.once('SIGTERM', () => bot.stop('SIGTERM'));
 ### i18next
 
 ```js
+const { i18next } = require('telegraf-i18next')
+
 bot.use(i18next({
     debug: true,
     lng: 'en',
