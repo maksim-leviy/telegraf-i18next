@@ -31,4 +31,4 @@ function reply(resourceKey, extra) {
     }
 }
 
-module.exports = { i18next, match, reply }
+module.exports = { i18next, match, reply, t: _i18next.t }
