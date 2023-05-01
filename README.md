@@ -144,5 +144,5 @@ bot.command('keyboard', async (ctx) => {
     return ctx.reply('Keyboard:', Markup.keyboard([[ctx.i18next.t('hello')]])))
 });
 
-bot.hears(match(hello), reply('hello'));
+bot.hears(match('hello'), reply('hello'));
 ```
