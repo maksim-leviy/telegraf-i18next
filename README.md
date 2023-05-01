@@ -26,6 +26,7 @@
     * [i18next](#i18next)
     * [match](#match)
     * [reply](#reply)
+    * [t](#t)
 - [i18next Documentation](https://www.i18next.com/)
 
 ## Getting started
@@ -145,4 +146,14 @@ bot.command('keyboard', async (ctx) => {
 });
 
 bot.hears(match('hello'), reply('hello'));
+```
+
+### t
+
+```js
+const { t } = require('telegraf-i18next')
+
+bot.command('keyboard', async (ctx) => {
+    return ctx.reply('Keyboard:', Markup.keyboard([[t('hello')]]))
+})
 ```
